@@ -314,6 +314,8 @@ void place_tag_processor::process_tags(const taglist_t &tags)
             extratags.push_back(&*item);
         } else if (item->key == "building") {
             placebuilding = true;
+        } else {
+            extratags.push_back(&*item);
         }
     }
 
